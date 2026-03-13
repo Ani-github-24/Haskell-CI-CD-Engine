@@ -1,0 +1,44 @@
+2026-03-11 10:20:02.482 IST [17240] LOG:  starting PostgreSQL 17.2 on x86_64-windows, compiled by gcc-14.2.0, 64-bit
+2026-03-11 10:20:02.488 IST [17240] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-03-11 10:20:02.488 IST [17240] LOG:  listening on IPv6 address "::1", port 5432
+2026-03-11 10:20:02.543 IST [8760] LOG:  database system was shut down at 2026-03-11 10:19:49 IST
+2026-03-11 10:20:02.563 IST [17240] LOG:  database system is ready to accept connections
+2026-03-11 10:20:25.447 IST [3000] FATAL:  role "10124" does not exist
+2026-03-11 10:21:07.758 IST [10836] FATAL:  role "10124" does not exist
+2026-03-11 10:21:07.787 IST [19104] FATAL:  role "10124" does not exist
+2026-03-11 10:21:23.944 IST [19772] FATAL:  role "10124" does not exist
+2026-03-11 10:21:23.977 IST [13780] FATAL:  role "10124" does not exist
+2026-03-11 10:25:02.546 IST [16176] LOG:  checkpoint starting: time
+2026-03-11 10:26:51.139 IST [16176] LOG:  checkpoint complete: wrote 991 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=108.275 s, sync=0.289 s, total=108.600 s; sync files=320, longest=0.028 s, average=0.001 s; distance=4639 kB, estimate=4639 kB; lsn=0/1975DE0, redo lsn=0/1975D50
+2026-03-11 10:50:02.203 IST [16176] LOG:  checkpoint starting: time
+2026-03-11 10:50:03.985 IST [16176] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.749 s, sync=0.012 s, total=1.787 s; sync files=14, longest=0.002 s, average=0.001 s; distance=2 kB, estimate=4175 kB; lsn=0/19765B8, redo lsn=0/1976560
+2026-03-11 10:52:29.334 IST [20032] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 10:52:29.334 IST [5928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 10:55:03.005 IST [16176] LOG:  checkpoint starting: time
+2026-03-11 10:55:03.710 IST [16176] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.656 s, sync=0.010 s, total=0.708 s; sync files=7, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=3758 kB; lsn=0/1977010, redo lsn=0/1976FB8
+2026-03-11 11:03:41.005 IST [11048] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 11:03:41.005 IST [20892] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 11:10:04.372 IST [16176] LOG:  checkpoint starting: time
+2026-03-11 11:10:05.112 IST [16176] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.665 s, sync=0.011 s, total=1.213 s; sync files=7, longest=0.003 s, average=0.002 s; distance=3 kB, estimate=3382 kB; lsn=0/1977CF0, redo lsn=0/1977C98
+2026-03-11 11:12:14.136 IST [23476] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 11:12:14.136 IST [14820] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 11:15:03.176 IST [16176] LOG:  checkpoint starting: time
+2026-03-11 11:15:04.052 IST [16176] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.749 s, sync=0.010 s, total=0.888 s; sync files=7, longest=0.004 s, average=0.002 s; distance=3 kB, estimate=3044 kB; lsn=0/1978C60, redo lsn=0/1978C08
+2026-03-11 11:25:03.082 IST [16176] LOG:  checkpoint starting: time
+2026-03-11 11:25:03.787 IST [16176] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.671 s, sync=0.008 s, total=0.711 s; sync files=7, longest=0.002 s, average=0.002 s; distance=5 kB, estimate=2740 kB; lsn=0/197A1C0, redo lsn=0/197A168
+2026-03-11 11:53:18.011 IST [2300] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-03-11 11:53:24.374 IST [17240] LOG:  received fast shutdown request
+2026-03-11 11:53:24.379 IST [17240] LOG:  aborting any active transactions
+2026-03-11 11:53:24.385 IST [18712] ERROR:  canceling statement due to user request
+2026-03-11 11:53:24.400 IST [17240] LOG:  background worker "logical replication launcher" (PID 18712) exited with exit code 1
+2026-03-11 11:53:24.401 IST [16176] LOG:  shutting down
+2026-03-11 11:53:24.403 IST [16176] LOG:  checkpoint starting: shutdown immediate
+2026-03-11 11:53:24.429 IST [16176] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.027 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=2466 kB; lsn=0/197A270, redo lsn=0/197A270
+2026-03-11 11:53:24.445 IST [17240] LOG:  database system is shut down

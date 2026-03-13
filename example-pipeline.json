@@ -1,0 +1,48 @@
+{
+  "name": "my-app",
+  "commit": "abc123def456",
+  "jobs": [
+    {
+      "name": "lint",
+      "image": "alpine:latest",
+      "commands": [
+        "echo 'Running lint...'",
+        "sleep 2"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "test",
+      "image": "alpine:latest",
+      "commands": [
+        "echo 'Running tests...'",
+        "sleep 3"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "build",
+      "image": "alpine:latest",
+      "commands": [
+        "echo 'Building app...'",
+        "sleep 2"
+      ],
+      "depends_on": [
+        "lint",
+        "test"
+      ]
+    },
+    {
+      "name": "deploy",
+      "image": "alpine:latest",
+      "commands": [
+        "echo 'Deploying application...'",
+        "sleep 1",
+        "echo 'Deploy complete.'"
+      ],
+      "depends_on": [
+        "build"
+      ]
+    }
+  ]
+}

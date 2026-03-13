@@ -1,0 +1,31 @@
+name: my-app
+commit: abc123def456
+
+jobs:
+  - name: lint
+    image: haskell:9.6
+    commands:
+      - "hlint src/"
+    depends_on: []
+
+  - name: test
+    image: haskell:9.6
+    commands:
+      - "cabal test --test-show-details=streaming"
+    depends_on: []
+
+  - name: build
+    image: haskell:9.6
+    commands:
+      - "cabal build all"
+    depends_on:
+      - lint
+      - test
+
+  - name: deploy
+    image: alpine:latest
+    commands:
+      - "echo 'Deploying application...'"
+      - "echo 'Deploy complete.'"
+    depends_on:
+      - build
